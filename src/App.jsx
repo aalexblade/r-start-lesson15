@@ -45,12 +45,12 @@ const LoginPage = lazy(() => import('./pages/LoginPage/LoginPage'));
 const JoinPage = lazy(() => import('./pages/JoinPage/JoinPage'));
 
 export const App = () => {
-  const dispatch = useDispatch();
-  const token = useSelector(selectAuthToken);
+  // const dispatch = useDispatch();
+  // const token = useSelector(selectAuthToken);
 
-  useEffect(() => {
-    dispatch(getProfileThunk());
-  }, [token, dispatch]);
+  // useEffect(() => {
+  //   dispatch(getProfileThunk());
+  // }, [token, dispatch]);
 
   return (
     <BrowserRouter basename="goit-59-fs">

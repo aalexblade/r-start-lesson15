@@ -28,6 +28,7 @@ const LoginPage = () => {
 
     try {
       await dispatch(authLoginThunk(values)).unwrap();
+      console.log(values);
       toast.success('Success');
     } catch {
       toast.error('Error');
